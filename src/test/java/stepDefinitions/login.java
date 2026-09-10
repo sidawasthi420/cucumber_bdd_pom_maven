@@ -1,36 +1,54 @@
 package stepDefinitions;
 
 import java.util.List;
+import org.testng.Assert;
 
-import hooks.hook;
+import context.TestContext;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.loginPageObject;
 
 public class login {
 
+    loginPageObject obj;
+
+    public login(TestContext context){
+        obj = new loginPageObject(context);
+    }
 
     @Given("^Navigate to url \"([^\"]*)\"$")
     public void navigate_to_url(String url) {
-       hook.driver.get(url);
+      obj.enterURL(url);
+    }
+
+    @Given("Click on Login button")
+    public void click_on_login_button() {
+        obj.clkInitLoginbtn();
     }
 
     @When("^User enter the username as \"([^\"]*)\" and password as \"([^\"]*)\"$")
     public void user_enter_the_username_and_password(String username, String password) {
-        System.out.println("User name is " + username);
-        System.out.println("Password is "+ password);
+        obj.enterUsername(username);
+        obj.enterPassword(password);
     }
 
     @When("^User clicks on Login button$")
     public void user_clicks_on_login_button() {
-        System.out.println("Login button clicked");
+        obj.clkLoginbtn();
     }
 
     @Then("^User should get logged in successfully$")
-    public void user_should_get_logged_in_successfully() {
-        System.out.println("User logged in successfully");
+    public void user_should_get_logged_in_successfully() throws InterruptedException {
+        Thread.sleep(10000);
+        Assert.assertEquals(obj.getTitle(),"Shivoham Automation Expert - Consultancy Services - Admin Dashboard");
+    }
+
+    @Then("Click on Logout button")
+    public void click_on_logout_button() {
+       obj.clkLogoutbtn();
     }
 
     @Then("^User should not get logged-in into the application$")

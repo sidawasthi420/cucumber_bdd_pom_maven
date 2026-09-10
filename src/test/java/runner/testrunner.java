@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-    features = "src/test/resources/features/login_common_step_scenario_outline.feature",
+    features = "src/test/resources/features/login.feature",
     glue = {"stepDefinitions","hooks"},
     dryRun = false,        //true :- Cucumber checks the mapping and reports missing snippets with launching tests
     plugin = {"pretty",
