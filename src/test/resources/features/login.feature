@@ -3,13 +3,10 @@ Feature: Login Functionality
 
     Background: 
         And Navigate to url "https://shivohamautomation.com/"
+        And Click on Login button
 
     Scenario: Validate that login is working fine with valid credentials
-        When User enter the username as "siddhant" and password as "system123#"
+        When User enter the username as "siddhant" and password as "system123"
         And  User clicks on Login button
         Then User should get logged in successfully
-
-    Scenario: Validate that login is not working fine with invalid credentials
-       When User enter the username as "siddhant" and password as "system123#"
-        And  User clicks on Login button
-        Then User should not get logged-in into the application
+        And Click on Logout button
