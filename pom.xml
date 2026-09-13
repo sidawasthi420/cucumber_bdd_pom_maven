@@ -86,7 +86,8 @@
                             <!-- <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile> -->
 
                             <!-- Yashwin's files configuration -->
-                            <suiteXmlFile>src/test/java/yashwin/resources/yashwinTestng.xml</suiteXmlFile>
+                            <!-- <suiteXmlFile>src/test/java/yashwin/resources/yashwinTestng.xml</suiteXmlFile> -->
+                            <suiteXmlFile>src/test/java/yashwin/StructurePractice/resources/testNG.xml</suiteXmlFile>
 
                         </suiteXmlFiles>
                     </configuration>
