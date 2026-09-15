@@ -82,7 +82,13 @@
                     <version>2.22.1</version>
                     <configuration>
                         <suiteXmlFiles>
-                            <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                            <!-- Teacher's main file -->
+                            <!-- <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile> -->
+
+                            <!-- Yashwin's files configuration -->
+                            <!-- <suiteXmlFile>src/test/java/yashwin/resources/yashwinTestng.xml</suiteXmlFile> -->
+                            <suiteXmlFile>src/test/java/yashwin/StructurePractice/resources/testNG.xml</suiteXmlFile>
+
                         </suiteXmlFiles>
                     </configuration>
                 </plugin>
