@@ -1,0 +1,56 @@
+{
+  "students": [
+    {
+      "name": "Siddhant Awasthi",
+      "age": 29,
+      "grade": "12th",
+      "subjects": [
+        "Maths",
+        "Physics",
+        "Chemistry",
+        "Computer"
+      ],
+      "id": "1"
+    },
+    {
+      "name": "Ravi Ratan Raj",
+      "age": 30,
+      "grade": "B.tech",
+      "subjects": [
+        "Maths",
+        "Physics",
+        "Chemistry"
+      ],
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "Sourabh",
+      "age": 26,
+      "grade": "12th",
+      "subjects": [
+        "Economics",
+        "English",
+        "Chemistry"
+      ]
+    },
+    {
+      "id": "84d1",
+      "grade": "A",
+      "name": "Cucumber Student",
+      "age": 25
+    },
+    {
+      "id": "a998",
+      "grade": "11th",
+      "subjects": [
+        "Hindi",
+        "Sanskrit",
+        "Computer",
+        "Chemistry"
+      ],
+      "name": "Tariq Ahmad",
+      "age": 28
+    }
+  ]
+}

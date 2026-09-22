@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="P05 Cucumber API Chaining Suite">
+
+    <test name="P05 Cucumber API Chaining Test">
+
+        <classes>
+            <class name="p05_cucumber_api_chaining.runners.P05_CucumberRunner"/>
+        </classes>
+
+    </test>
+
+</suite>
