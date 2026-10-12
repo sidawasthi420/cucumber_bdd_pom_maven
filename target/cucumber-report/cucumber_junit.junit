@@ -1,13 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="22.963" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-09-10T16:47:13.585112500Z">
-<testcase classname="Login Functionality" name="Validate that login is working fine with valid credentials" time="22.846">
+<testsuite name="Cucumber" time="2.452" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-10-12T16:02:23.111819900Z">
+<testcase classname="Login Functionality" name="Validate that login is working fine with valid credentials" time="2.304">
+<failure type="org.openqa.selenium.NoSuchSessionException" message="invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=154.0.8037.57)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bcb2a76f2547f80476c533f8b67b9f9d, findElement {using=class name, value=btn-primary}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.57, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\Siddhant\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60518}, goog:processID: 19104, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60518/devtoo..., se:cdpVersion: 154.0.8037.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bcb2a76f2547f80476c533f8b67b9f9d">
+<![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=154.0.8037.57)
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bcb2a76f2547f80476c533f8b67b9f9d, findElement {using=class name, value=btn-primary}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.57, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\Siddhant\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60518}, goog:processID: 19104, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60518/devtoo..., se:cdpVersion: 154.0.8037.57, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bcb2a76f2547f80476c533f8b67b9f9d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:67)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:400)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at pages.loginPageObject.clkInitLoginbtn(loginPageObject.java:39)
+	at stepDefinitions.login.click_on_login_button(login.java:29)
+	at ✽.Click on Login button(file:///D:/maven_project/cucumber_bdd_pom_maven/src/test/resources/features/login.feature:6)
+]]>
+</failure>
 <system-out><![CDATA[
 And Navigate to url "https://shivohamautomation.com/".......................passed
-And Click on Login button...................................................passed
-When User enter the username as "siddhant" and password as "system123"......passed
-And User clicks on Login button.............................................passed
-Then User should get logged in successfully.................................passed
-And Click on Logout button..................................................passed
+And Click on Login button...................................................failed
+When User enter the username as "siddhant" and password as "system123"......skipped
+And User clicks on Login button.............................................skipped
+Then User should get logged in successfully.................................skipped
+And Click on Logout button..................................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -1,5 +1,0 @@
-stepDefinitions\login.class
-pages\loginPageObject.class
-hooks\hook.class
-runner\testrunner.class
-context\TestContext.class
